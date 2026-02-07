@@ -1,0 +1,165 @@
+{
+    "timeline": {
+        "title": "Project Timeline",
+        "year": "2026",
+        "phases": [
+            { "id": 1, "name": "Kickoff Workshop", "date": "March 17" },
+            { "id": 2, "name": "Data Collection", "date": "March 18" },
+            { "id": 3, "name": "Initial Phase", "date": "May 8" },
+            { "id": 4, "name": "Verification", "date": "May 9–July 12" },
+            { "id": 5, "name": "Completion Reviews", "date": "July 13" },
+            { "id": 6, "name": "Cycle Conclusion", "date": "August 21" }
+        ]
+    },
+    "metrics": [{
+            "id": 1,
+            "value": "78.65%",
+            "label": "Overall Progress",
+            "icon": "trending-up"
+        },
+        { "id": 2, "value": "95", "label": "Total Criteria", "icon": "folder" },
+        {
+            "id": 3,
+            "value": "52",
+            "label": "Completed Criteria",
+            "icon": "folder-check"
+        },
+        {
+            "id": 4,
+            "value": "386",
+            "label": "Evidence Documents",
+            "icon": "file-security"
+        },
+        {
+            "id": 5,
+            "value": "302",
+            "label": "Evidence (Completed)",
+            "icon": "file-verified"
+        },
+        {
+            "id": 6,
+            "value": "258",
+            "label": "Uploaded to DGA",
+            "icon": "file-upload"
+        }
+    ],
+    "progressStatus": [{
+            "id": 1,
+            "name": "Strategy and Planning",
+            "percentage": 97.78
+        },
+        {
+            "id": 2,
+            "name": "Organization and Culture",
+            "percentage": 78.89
+        },
+        {
+            "id": 3,
+            "name": "Operations and Execution",
+            "percentage": 100
+        },
+        {
+            "id": 4,
+            "name": "Business Continuity",
+            "percentage": 90.59
+        },
+        {
+            "id": 5,
+            "name": "Information Security",
+            "percentage": 78.0
+        },
+        {
+            "id": 6,
+            "name": "Comprehensive Governance",
+            "percentage": 64.65
+        },
+        {
+            "id": 7,
+            "name": "Channels and Services",
+            "percentage": 100
+        },
+        {
+            "id": 8,
+            "name": "Beneficiary Centralization",
+            "percentage": 60.0
+        },
+        {
+            "id": 9,
+            "name": " Government Data",
+            "percentage": 87.5
+        },
+        {
+            "id": 10,
+            "name": " Research and Innovation",
+            "percentage": 57.69
+        }
+    ],
+    "complianceScore": {
+        "percentage": 65,
+        "label": "Basic Standards 2025"
+    },
+    "topLeaders": [{
+            "id": 1,
+            "name": "Ahmed Al-Ali",
+            "role": "Strategy Perspective",
+            "percentage": 98,
+            "avatar": "AA",
+            "icon": "ahmed.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Sarah Al-Khaled",
+            "role": "Execution Perspective",
+            "percentage": 94,
+            "avatar": "SK",
+            "icon": "sarah.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Mohammad Al-Mansour",
+            "role": "IT Perspective",
+            "percentage": 92,
+            "avatar": "MM",
+            "icon": "muhammad.jpg"
+        }
+    ],
+    "recentActivities": [{
+            "id": 1,
+            "title": "Document 'Strategy_Review.PDF' Was Uploaded By Ahmed Project",
+            "time": "5 Hrs Ago"
+        },
+        {
+            "id": 2,
+            "title": "Task 'Review Compliance File' Was Assigned To Mona Hamed",
+            "time": "20 Mins Ago"
+        },
+        {
+            "id": 3,
+            "title": "New Criterion '5.3 Digital Identity' Was Created By Admin",
+            "time": "1 Hour Ago"
+        }
+    ],
+    "performanceChart": {
+        "title": "12-Month Performance",
+        "unit": "GER",
+        "data": [
+            { "month": "Jan", "value": 85 },
+            { "month": "Feb", "value": 72 },
+            { "month": "Mar", "value": 65 },
+            { "month": "Apr", "value": 78 },
+            { "month": "May", "value": 58 },
+            { "month": "Jun", "value": 81 },
+            { "month": "Jul", "value": 68 },
+            { "month": "Aug", "value": 72 },
+            { "month": "Sep", "value": 75 },
+            { "month": "Oct", "value": 62 },
+            { "month": "Nov", "value": 79 },
+            { "month": "Dec", "value": 64 }
+        ]
+    },
+    "auditReadiness": {
+        "percentage": 80,
+        "overdueTasks": 12,
+        "missingEvidence": 5
+    }
+}

@@ -1,0 +1,77 @@
+{
+    "page": {
+        "heading": "Strategy & Planning",
+        "title": "Digital Transformation Strategic Planning",
+        "subtitle": "Develop Comprehensive Strategic Plans for Digital Transformation Aligned With Organizational Goals",
+        "breadcrumb": "Digital Transformation Strategic Planning",
+        "progress": 100
+    },
+    "metrics": [{
+            "id": 1,
+            "number": 4,
+            "label": "Total Evidence",
+            "icon": "file-text"
+        },
+        {
+            "id": 2,
+            "number": 3,
+            "label": "Under Review Evidence",
+            "icon": "clock"
+        },
+        {
+            "id": 3,
+            "number": 2,
+            "label": "In Progress Evidence",
+            "icon": "hourglass"
+        },
+        {
+            "id": 4,
+            "number": 1,
+            "label": "Completed Evidence",
+            "icon": "check-circle"
+        }
+    ],
+    "sections": [{
+            "id": "objective",
+            "title": "Objective",
+            "content": "Develop A Digital Transformation Strategy Aligned With The Organization's Strategy And The Objectives Of Saudi Vision 2030."
+        },
+        {
+            "id": "implementation",
+            "title": "Implementation Requirements",
+            "content": "Prepare A Digital Transformation Strategy For The Transition To Electronic Government Transactions, Including The Following: A. The Organization's Vision, Mission, Strategic Pillars, And Strategic Objectives, And Their Alignment With The Organization's Overall Strategy. B. Strategic Initiatives, Programs, And Performance Indicators. C. A Clear Methodology For Integration And Coordination With Relevant External Entities To Achieve The Strategy's Objectives. D. Required Competencies, Capabilities, And Skills Necessary To Achieve The Strategy's Objectives."
+        },
+        {
+            "id": "evidence",
+            "title": "Evidence Documents",
+            "content": "Submit The Approved Digital Transformation Strategy That Includes All The Requirements Of This Standard, Provided That It Has Been Approved Within A Period Not Exceeding 36 Months."
+        },
+        {
+            "id": "regulations",
+            "title": "Related Regulations",
+            "content": "Council Of Ministers Resolution No. (40) Dated 27/2/1427H, Clause (16)."
+        },
+        {
+            "id": "scope",
+            "title": "Scope",
+            "content": "All Government Entities."
+        }
+    ],
+    "leaders": [{
+            "id": 1,
+            "name": "Ahmed Al-Ali",
+            "role": "Strategy Perspective",
+            "avatar": "AA"
+        },
+        {
+            "id": 2,
+            "name": "Ahmed Al-Ali",
+            "role": "Strategy Perspective",
+            "avatar": "AA"
+        }
+    ],
+    "tabs": [
+        { "id": "overview", "label": "Overview" },
+        { "id": "evidence", "label": "Evidence" }
+    ]
+}

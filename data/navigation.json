@@ -1,0 +1,20 @@
+{
+    "navigation": [{
+            "id": 1,
+            "name": "Dashboard",
+            "icon": "home",
+            "href": "/",
+            "link": "/dashboard"
+        },
+        {
+            "id": 2,
+            "name": "Perspectives",
+            "icon": "medical-file",
+            "href": "/perspectives"
+        },
+        { "id": 3, "name": "Tasks", "icon": "profile", "href": "#" },
+        { "id": 4, "name": "Documents", "icon": "file", "href": "#" },
+        { "id": 5, "name": "Reports", "icon": "bar-chart-line", "href": "#" },
+        { "id": 6, "name": "Users & Roles", "icon": "users", "href": "#" }
+    ]
+}
