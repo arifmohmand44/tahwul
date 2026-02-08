@@ -30,10 +30,10 @@ export default function ProgressStatus({ items }: ProgressStatusProps) {
         </h3>
 
         {/* Legend */}
-        <div className="flex flex-wrap gap-6 lg:gap-4 text-xs lg:text-sm font-normal text-primary justify-center">
+        <div className="flex flex-wrap gap-2 md:gap-6 lg:gap-4 text-xs lg:text-sm font-normal text-primary justify-center">
           {legendLabel.map((label) => (
             <div key={label.name} className="flex items-center gap-1.5">
-              <div className={`w-2.5 h-2.5 rounded-full ${label.color}`} />
+              <div className={`w-2 h-2 lg:w-2.5 lg:h-2.5 rounded-full ${label.color}`} />
               <span>{label.name}</span>
             </div>
           ))}
@@ -41,7 +41,7 @@ export default function ProgressStatus({ items }: ProgressStatusProps) {
       </div>
 
       {/* Status Boxes - Dark boxes with percentages */}
-      <div className="grid grid-cols-5 lg:grid-cols-10 gap-4 mb-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 gap-4 mb-4">
         {items.map((item) => (
           <div
             key={item.id}

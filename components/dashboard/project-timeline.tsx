@@ -68,17 +68,17 @@ export default function ProjectTimeline({
           return (
             <div
               key={phase.id}
-              className="absolute text-center w-20 lg:w-auto"
+              className="absolute text-center w-12 md:w-20 lg:w-auto"
               style={{
                 left: `${leftPosition}%`,
                 transform: "translateX(-50%)",
               }}
             >
-              <span className="text-xs lg:text-sm text-gray-400 font-normal block mb-2 lg:mb-1">
+              <span className="text-xxs sm:text-xs lg:text-sm text-gray-400 font-normal block mb-2 lg:mb-1">
                 {phase.date}
               </span>
 
-              <p className="text-xs lg:text-sm leading-tight text-primary font-normal lg:font-medium whitespace-normal lg:whitespace-nowrap">
+              <p className="text-xxs sm:text-xs lg:text-sm leading-tight text-primary font-normal lg:font-medium whitespace-normal lg:whitespace-nowrap">
                 {phase.name}
               </p>
             </div>

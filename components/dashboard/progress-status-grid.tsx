@@ -1,12 +1,12 @@
 export default function ProgressStatusGrid() {
   return (
-    <div className="grid grid-cols-5 lg:grid-cols-10 justify-between gap-4">
+    <div className="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-10 justify-between gap-4">
       {/* Col-1 */}
       <div className="flex-1 space-y-3">
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -30,7 +30,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -54,7 +54,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -84,7 +84,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -108,7 +108,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -135,7 +135,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -162,7 +162,7 @@ export default function ProgressStatusGrid() {
       <div className="flex-1 space-y-3">
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[460px] lg:h-[505px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[460px] lg:h-[505px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -192,7 +192,7 @@ export default function ProgressStatusGrid() {
       <div className="flex-1 space-y-3">
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -217,7 +217,7 @@ export default function ProgressStatusGrid() {
         </div>
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[223px] h-[247px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[223px] h-[247px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -246,7 +246,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -272,7 +272,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -298,7 +298,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -325,7 +325,7 @@ export default function ProgressStatusGrid() {
       <div className="flex-1 space-y-3">
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[460px] lg:h-[505px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[460px] lg:h-[505px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -353,7 +353,7 @@ export default function ProgressStatusGrid() {
       <div className="flex-1 space-y-3">
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -378,7 +378,7 @@ export default function ProgressStatusGrid() {
         </div>
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[223px] lg:h-[247px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -407,7 +407,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -433,7 +433,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -457,7 +457,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -486,7 +486,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -510,7 +510,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -534,7 +534,7 @@ export default function ProgressStatusGrid() {
         {/* Card */}
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-36 lg:h-40 p-3 
+                w-full md:w-28 lg:w-[140px] h-36 lg:h-40 p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
@@ -561,7 +561,7 @@ export default function ProgressStatusGrid() {
       <div className="flex-1 space-y-3">
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-             w-28 lg:w-[140px] h-[223px] lg:h-[245px] p-3 
+             w-full md:w-28 lg:w-[140px] h-[223px] lg:h-[245px] p-3 
              flex flex-col"
         >
           {/* Title (Top) */}
@@ -586,7 +586,7 @@ export default function ProgressStatusGrid() {
         </div>
         <div
           className="bg-gray-50 rounded-xl border-2 border-gray-200 
-                w-28 lg:w-[140px] h-[223px] lg:h-[245px] p-3 
+                w-full md:w-28 lg:w-[140px] h-[223px] lg:h-[245px] p-3 
                 flex flex-col justify-between"
         >
           {/* Top Text */}
