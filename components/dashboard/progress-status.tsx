@@ -24,13 +24,13 @@ const legendLabel = [
 export default function ProgressStatus({ items }: ProgressStatusProps) {
   return (
     <div className="mb-6 p-4 border border-secondary bg-white rounded-xl shadow">
-      <div className="flex justify-between items-center mb-4">
-        <h3 className="text-base font-bold text-primary mb-3">
+      <div className="flex flex-col lg:flex-row justify-between mb-4">
+        <h3 className="text-base font-semibold lg:font-bold text-primary mb-3 lg:mb-0">
           Progress Status
         </h3>
 
         {/* Legend */}
-        <div className="flex flex-wrap gap-4 text-sm font-normal text-primary justify-center">
+        <div className="flex flex-wrap gap-6 lg:gap-4 text-xs lg:text-sm font-normal text-primary justify-center">
           {legendLabel.map((label) => (
             <div key={label.name} className="flex items-center gap-1.5">
               <div className={`w-2.5 h-2.5 rounded-full ${label.color}`} />
@@ -41,14 +41,14 @@ export default function ProgressStatus({ items }: ProgressStatusProps) {
       </div>
 
       {/* Status Boxes - Dark boxes with percentages */}
-      <div className="grid grid-cols-10 gap-4 mb-4">
+      <div className="grid grid-cols-5 lg:grid-cols-10 gap-4 mb-4">
         {items.map((item) => (
           <div
             key={item.id}
             className="bg-primary rounded-xl p-4 text-center text-white"
           >
-            <p className="text-xs font-bold leading-tight mb-3">{item.name}</p>
-            <span className="text-sm font-bold px-3 text-white py-1 bg-[#98AEC01A] rounded-3xl">
+            <p className="text-xs font-normal lg:font-bold leading-tight mb-3">{item.name}</p>
+            <span className="text-xs lg:text-sm font-semibold lg:font-bold px-3 text-white py-1 bg-[#98AEC01A] rounded-3xl">
               {item.percentage.toFixed(2)}%
             </span>
           </div>

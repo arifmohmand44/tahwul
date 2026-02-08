@@ -16,7 +16,7 @@ export default function ActivitiesTimeline({
 }: ActivitiesTimelineProps) {
   return (
     <div className="bg-white rounded-xl border border-secondary p-6 shadow">
-      <h2 className="text-base font-bold text-primary mb-6">
+      <h2 className="text-base font-semibold lg:font-bold text-primary mb-6">
         Recent Activities
       </h2>
 
@@ -24,7 +24,7 @@ export default function ActivitiesTimeline({
         {activities.map((activity) => (
           <div
             key={activity.id}
-            className="flex items-start gap-4 border-t-2 border-secondary py-2"
+            className="flex items-start gap-2 lg:gap-4 border-t-2 border-secondary py-2"
           >
             {/* Timeline dot */}
             <div className="flex flex-col items-center pt-2">
@@ -32,8 +32,8 @@ export default function ActivitiesTimeline({
             </div>
 
             {/* Content Wrapper */}
-            <div className="flex flex-1 items-start justify-between gap-6">
-              <p className="text-base font-medium text-primary">
+            <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between gap-2 lg:gap-6 min-w-0">
+              <p className="text-sm lg:text-base font-normal lg:font-medium text-primary break-words">
                 {activity.title} {activity.description}
               </p>
 

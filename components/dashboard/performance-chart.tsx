@@ -28,7 +28,7 @@ export default function PerformanceChart({
 }: PerformanceChartProps) {
   return (
     <div className="bg-white rounded-xl border border-secondary shadow p-6">
-      <h3 className="text-base font-bold text-primary mb-6">{title}</h3>
+      <h3 className="text-base font-semibold lg:font-bold text-primary mb-6">{title}</h3>
 
       <ResponsiveContainer width="100%" height={300}>
         <BarChart

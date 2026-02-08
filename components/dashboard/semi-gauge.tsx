@@ -73,10 +73,10 @@ export default function SemiGauge({
 
       {/* Center Text */}
       <div className="absolute bottom-3 flex flex-col items-center">
-        <span className="text-[44px] font-bold text-primary mb-5">
+        <span className="text-[36px] lg:text-[44px] font-bold text-primary mb-5">
           {Math.round(progress)}%
         </span>
-        <span className="text-sm font-normal text-gray-500">
+        <span className="text-xs lg:text-sm font-normal text-gray-500">
           {label}
         </span>
       </div>

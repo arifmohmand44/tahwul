@@ -27,7 +27,7 @@ export default function CommentsSection({ comments }: CommentsSectionProps) {
 
   return (
     <div className="border border-secondary bg-white shadow rounded-xl p-6">
-      <h2 className="text-base font-bold text-primary mb-6">Comments</h2>
+      <h2 className="text-base font-semibold lg:font-bold text-primary mb-6">Comments</h2>
 
       {/* Comments List */}
       <div className="space-y-4 mb-6">

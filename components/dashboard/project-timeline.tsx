@@ -23,7 +23,7 @@ export default function ProjectTimeline({
   return (
     <div className="mb-6 p-4 border border-secondary bg-white rounded-xl shadow">
       <div className="flex items-center justify-between mb-4">
-        <h3 className="text-base font-bold text-primary">{title}</h3>
+        <h3 className="text-base font-semibold lg:font-bold text-primary">{title}</h3>
         <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg border border-gray-300 transition-colors">
           {year}
           <ChevronDown className="w-3 h-3" />
@@ -68,16 +68,17 @@ export default function ProjectTimeline({
           return (
             <div
               key={phase.id}
-              className="absolute text-center lg:whitespace-nowrap max-w-max"
+              className="absolute text-center w-20 lg:w-auto"
               style={{
                 left: `${leftPosition}%`,
                 transform: "translateX(-50%)",
               }}
             >
-              <span className="text-sm text-gray-400 font-normal block whitespace-nowrap">
+              <span className="text-xs lg:text-sm text-gray-400 font-normal block mb-2 lg:mb-1">
                 {phase.date}
               </span>
-              <p className="text-sm text-primary font-medium whitespace-nowrap">
+
+              <p className="text-xs lg:text-sm leading-tight text-primary font-normal lg:font-medium whitespace-normal lg:whitespace-nowrap">
                 {phase.name}
               </p>
             </div>
@@ -85,7 +86,7 @@ export default function ProjectTimeline({
         })}
 
         {/* Give container height so absolute items show properly */}
-        <div className="h-16" />
+        <div className="h-14" />
       </div>
     </div>
   );

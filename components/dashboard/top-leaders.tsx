@@ -16,7 +16,7 @@ interface TopLeadersProps {
 export default function TopLeaders({ leaders }: TopLeadersProps) {
   return (
     <div className="bg-white rounded-xl border border-secondary shadow p-6">
-      <h3 className="text-base font-bold text-primary mb-5">
+      <h3 className="text-base font-semibold lg:font-bold text-primary mb-4 lg:mb-5">
         Top Performing Perspective Leaders
       </h3>
 
@@ -33,14 +33,14 @@ export default function TopLeaders({ leaders }: TopLeadersProps) {
               <AvatarFallback>{leader.avatar}</AvatarFallback>
             </Avatar>
             <div className="flex-1 min-w-0">
-              <p className="text-base font-medium text-primary">
+              <p className="text-sm lg:text-base font-medium text-primary">
                 {leader.name}
               </p>
-              <p className="text-base font-medium text-gray-400">
+              <p className="text-sm lg:text-base font-medium text-gray-400">
                 {leader.role}
               </p>
             </div>
-            <p className="text-base font-bold text-primary flex-shrink-0">
+            <p className="text-base font-semibold lg:font-bold text-primary flex-shrink-0">
               {leader.percentage}%
             </p>
           </div>

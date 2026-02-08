@@ -11,7 +11,7 @@ export default function ComplianceScore({
 }: ComplianceScoreProps) {
   return (
     <div className="bg-white rounded-xl border border-secondary shadow p-6">
-      <h3 className="text-base font-bold text-primary mb-5">
+      <h3 className="text-base font-semibold lg:font-bold text-primary mb-5">
         Overall Compliance Score
       </h3>
       <div className="py-6">

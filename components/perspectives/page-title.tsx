@@ -15,7 +15,7 @@ export default function PageTitle({
     <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 bg-white p-6 border border-secondary rounded-xl shadow">
       <div className="flex-1">
         <span className="text-xs font-medium text-gray-500 border border-gray-200 rounded-3xl px-3 py-2 mb-6">{heading}</span>
-        <h1 className="text-base font-bold text-primary mt-6 mb-1">
+        <h1 className="text-base font-semibold lg:font-bold text-primary mt-6 mb-1">
           {title}
         </h1>
         <p className="text-sm font-normal text-gray-600 text-bottom">{subtitle}</p>

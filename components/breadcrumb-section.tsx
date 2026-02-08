@@ -26,7 +26,7 @@ export default function BreadcrumbSection({
         />
       </svg>
 
-      <span className="text-base font-bold text-primary">{breadcrumb}</span>
+      <span className="text-base font-semibold lg:font-bold text-primary">{breadcrumb}</span>
     </div>
   );
 }

@@ -17,10 +17,10 @@ export default function TimelineMetrics({ metrics }: TimelineMetricsProps) {
       {metrics.map((metric) => (
         <div
           key={metric.id}
-          className="bg-white rounded-xl p-5 border border-secondary shadow"
+          className="bg-white rounded-xl p-5 border border-secondary shadow flex flex-col justify-between"
         >
-          <div className="flex items-center justify-between mb-1">
-            <p className="text-2xl font-bold text-gray-900">{metric.value}</p>
+          <div className="flex items-center justify-between">
+            <p className="text-xl lg:text-2xl font-bold text-gray-900">{metric.value}</p>
             <div className="text-red-500">{icons[metric.icon]}</div>
           </div>
 
