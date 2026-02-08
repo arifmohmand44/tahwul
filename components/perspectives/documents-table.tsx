@@ -35,7 +35,7 @@ const StatusBadge = ({ status }: { status: string }) => {
 };
 
 const TableHeader = ({ label }: { label: string }) => (
-  <th className="px-6 py-4 text-left text-xs font-normal bg-[#F5F8FB] first:rounded-tl-xl first:rounded-bl-xl last:rounded-tr-xl last:rounded-br-xl text-primary">
+  <th className="px-6 py-4 text-left text-xxs lg:text-xs font-normal bg-[#F5F8FB] first:rounded-tl-xl first:rounded-bl-xl last:rounded-tr-xl last:rounded-br-xl text-primary">
     <div className="flex items-center gap-2 cursor-pointer hover:text-primary">
       <span>{label}</span>
       <svg
@@ -80,23 +80,23 @@ export default function DocumentsTable({ documents }: DocumentsTableProps) {
                   index === documents.length - 1 ? "border-b-0" : ""
                 }`}
               >
-                <td className="px-6 py-4 text-sm font-normal text-primary">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary">
                   {doc.documentNumber}
                 </td>
-                <td className="px-6 py-4 text-sm font-normal text-primary hover:underline cursor-pointer">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary hover:underline cursor-pointer">
                   {doc.documentName}
                 </td>
-                <td className="px-6 py-4 text-sm font-normal text-primary">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary">
                   {doc.documentLead}
                 </td>
-                <td className="px-6 py-4 text-sm font-normal text-primary">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary">
                   {doc.documentPreparer}
                 </td>
-                <td className="px-6 py-4 text-sm font-normal text-primary">{doc.date}</td>
-                <td className="px-6 py-4 text-sm font-normal text-primary">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary">{doc.date}</td>
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal text-primary">
                   {doc.dueDate}
                 </td>
-                <td className="px-6 py-4 text-sm font-normal">
+                <td className="px-6 py-4 text-xs lg:text-sm font-normal">
                   <StatusBadge status={doc.status} />
                 </td>
               </tr>

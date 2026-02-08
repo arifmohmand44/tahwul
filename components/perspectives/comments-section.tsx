@@ -38,20 +38,20 @@ export default function CommentsSection({ comments }: CommentsSectionProps) {
           >
             <div className="flex items-center justify-between gap-4">
               <div
-                className={`w-8 h-8 mt-[-10] rounded-full flex items-center justify-center text-gray-500 font-medium flex-shrink-0 bg-secondary`}
+                className={`w-6 h-6 lg:w-8 lg:h-8 mt-[-10] text-xs lg:text-sm rounded-full flex items-center justify-center text-gray-500 font-medium flex-shrink-0 bg-secondary`}
               >
                 {comment.initial}
               </div>
               <div className="flex-1 min-w-0">
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-sm font-bold text-primary">
+                  <h3 className="text-xs lg:text-sm font-semibold lg:font-bold text-primary">
                     {comment.author}
                   </h3>
-                  <span className="text-sm font-normal text-gray-400">{comment.date}</span>
+                  <span className="text-xs lg:text-sm font-normal text-gray-400">{comment.date}</span>
                 </div>
               </div>
             </div>
-            <p className="text-gray-700 text-sm font-normal mt-2">{comment.content}</p>
+            <p className="text-gray-700 text-xs lg:text-sm font-normal mt-2">{comment.content}</p>
           </div>
         ))}
       </div>
@@ -68,7 +68,7 @@ export default function CommentsSection({ comments }: CommentsSectionProps) {
         <button
           onClick={handlePostComment}
           disabled={!newComment.trim()}
-          className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:opacity-50 disabled:cursor-not-allowed transition-colors font-normal text-base"
+          className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-lg hover:opacity-50 disabled:cursor-not-allowed transition-colors font-normal text-sm lg:text-base"
         >
           <svg
             className="w-4 h-4"

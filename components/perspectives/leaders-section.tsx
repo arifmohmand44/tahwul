@@ -15,8 +15,8 @@ export default function LeadersSection() {
               <AvatarFallback>{leader.avatar}</AvatarFallback>
             </Avatar>
             <div>
-              <p className="text-base font-medium text-primary">{leader.name}</p>
-              <p className="text-base font-medium text-gray-500">{leader.role}</p>
+              <p className="text-sm lg:text-base font-medium text-primary">{leader.name}</p>
+              <p className="text-sm lg:text-base font-medium text-gray-500">{leader.role}</p>
             </div>
           </div>
         ))}

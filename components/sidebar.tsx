@@ -1,17 +1,105 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import navigationData from "@/data/navigation.json";
 import Logo from "./logo";
 import Favicon from "./favicon";
 import { icons } from "./ui/icon";
 import { usePathname } from "next/navigation";
+import { Menu, X } from "lucide-react";
 
-export default function Sidebar() {
+export default function Sidebar({ isMobileOpen, setIsMobileOpen }: { isMobileOpen: boolean; setIsMobileOpen: (value: boolean) => void }) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
 
+  // Detect mobile screen size
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+      if (window.innerWidth >= 768) {
+        setIsMobileOpen(false);
+      }
+    };
+
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  // Close mobile menu when navigating
+  useEffect(() => {
+    setIsMobileOpen(false);
+  }, [pathname]);
+
+  const handleDesktopToggle = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const handleMobileToggle = () => {
+    setIsMobileOpen(!isMobileOpen);
+  };
+
+  // Mobile menu overlay
+  if (isMobile) {
+    return (
+      <>
+        {/* Mobile Menu Overlay */}
+        {isMobileOpen && (
+          <div
+            className="fixed inset-0 bg-black/50 z-40 md:hidden"
+            onClick={() => setIsMobileOpen(false)}
+          />
+        )}
+
+        {/* Mobile Sidebar */}
+        <aside
+          className={`fixed left-0 top-0 h-full bg-primary text-white flex flex-col z-40 transition-transform duration-300 w-56 p-6 ${
+            isMobileOpen ? "translate-x-0" : "-translate-x-full"
+          } md:hidden`}
+        >
+          <div className="mb-8 flex items-center justify-between gap-2">
+            <div className="flex items-center gap-2">
+              <Logo />
+            </div>
+            <button
+              onClick={() => setIsMobileOpen(false)}
+              className="p-1"
+              aria-label="Close menu"
+            >
+              <X size={20} />
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          <nav className="flex-1 space-y-2">
+            {navigationData.navigation.map((item) => (
+              <Link
+                key={item.id}
+                href={item.href}
+                className={`flex items-center gap-3 px-4 py-3 rounded-lg transition-colors ${
+                  pathname === item.href || pathname === item.link
+                    ? "bg-[#98AEC01A] text-white"
+                    : "text-blue-100 hover:bg-[#98AEC01A] hover:text-white"
+                }`}
+              >
+                {icons[item.icon]}
+                <span className="text-sm font-medium">{item.name}</span>
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile Footer */}
+          <div className="pt-6 border-t border-gray-600 text-xs text-blue-100">
+            © {new Date().getFullYear()} TAHWUL
+          </div>
+        </aside>
+      </>
+    );
+  }
+
+  // Desktop sidebar
   return (
     <aside
       className={`bg-primary relative text-white flex flex-col h-full transition-all duration-300 ${isOpen ? "w-56 lg:w-72 p-6" : "w-20 p-4"}`}
@@ -25,8 +113,8 @@ export default function Sidebar() {
 
       {/* Menu toggle button */}
       <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="absolute top-5 right-[-18px] w-9 h-9 flex items-center justify-center bg-white hover:bg-gray-50 rounded-full border border-1 transition-colors"
+        onClick={handleDesktopToggle}
+        className="absolute top-5 right-[-18px] w-9 h-9 flex items-center justify-center bg-white hover:bg-gray-50 rounded-full border border-1 transition-colors hidden md:flex"
         aria-label="Toggle sidebar"
       >
         <svg
