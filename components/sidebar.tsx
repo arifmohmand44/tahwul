@@ -7,9 +7,15 @@ import Logo from "./logo";
 import Favicon from "./favicon";
 import { icons } from "./ui/icon";
 import { usePathname } from "next/navigation";
-import { Menu, X } from "lucide-react";
+import { X } from "lucide-react";
 
-export default function Sidebar({ isMobileOpen, setIsMobileOpen }: { isMobileOpen: boolean; setIsMobileOpen: (value: boolean) => void }) {
+export default function Sidebar({
+  isMobileOpen,
+  setIsMobileOpen,
+}: {
+  isMobileOpen: boolean;
+  setIsMobileOpen: (value: boolean) => void;
+}) {
   const pathname = usePathname();
   const [isOpen, setIsOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
@@ -114,7 +120,7 @@ export default function Sidebar({ isMobileOpen, setIsMobileOpen }: { isMobileOpe
       {/* Menu toggle button */}
       <button
         onClick={handleDesktopToggle}
-        className="absolute top-5 right-[-18px] w-9 h-9 flex items-center justify-center bg-white hover:bg-gray-50 rounded-full border border-1 transition-colors hidden md:flex"
+        className="absolute top-5 right-[-16px] w-8 h-8 flex items-center justify-center bg-white hover:bg-gray-50 rounded-full border border-1 transition-colors hidden md:flex"
         aria-label="Toggle sidebar"
       >
         <svg

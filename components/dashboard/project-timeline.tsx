@@ -1,6 +1,6 @@
 "use client";
 
-import { ChevronDown } from "lucide-react";
+import YearDropdown from "../ui/year-dropdown";
 interface ProjectTimelineProps {
   title: string;
   year: string;
@@ -13,7 +13,6 @@ interface ProjectTimelineProps {
 
 export default function ProjectTimeline({
   title,
-  year,
   phases,
 }: ProjectTimelineProps) {
   const sidePadding = 5;
@@ -24,10 +23,7 @@ export default function ProjectTimeline({
     <div className="mb-6 p-4 border border-secondary bg-white rounded-xl shadow">
       <div className="flex items-center justify-between mb-4">
         <h3 className="text-base font-semibold lg:font-bold text-primary">{title}</h3>
-        <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 hover:bg-gray-100 rounded-lg border border-gray-300 transition-colors">
-          {year}
-          <ChevronDown className="w-3 h-3" />
-        </button>
+        <YearDropdown />
       </div>
 
       {/* Timeline Bar */}
